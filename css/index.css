@@ -1,0 +1,135 @@
+  .robot .inp {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .robot ul li {
+            list-style: none;
+            margin-top: 10px;
+        }
+        .robot ul li img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            box-shadow: 0 0 50px yellowgreen;
+        }
+
+
+        .music {
+            height: 500px;
+            display: flex;
+        }
+
+        .music .left {
+            width: 500px;
+            background-color: skyblue;
+            overflow-y: scroll;
+        }
+
+        .music .left input {
+            display: block;
+            margin: 10px auto;
+            height: 30px;
+            border-radius: 10px;
+            border: none;
+            width: 350px;
+            padding-left: 25px;
+        }
+
+        .music .left ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .music .left ul li {
+            cursor: pointer;
+            padding-left: 20px;
+        }
+
+        .music .left ul li:hover {
+            color: gold;
+            background-color: #fff;
+        }
+
+        .music .right {
+            flex: 1;
+            background-color: greenyellow;
+            position: relative;
+        }
+
+        .right .box {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 455px;
+            height: 100%;
+            overflow-y: scroll;
+        }
+
+        .music .right img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            display: block;
+            /* margin: 10px auto 0; */
+            margin-top: 50px;
+            margin-left: 50px;
+
+        }
+
+        .music .right p {
+
+            font-size: 22px;
+            color: black;
+            text-shadow: 0 0 20px orange;
+        }
+
+        .music .right audio {
+            display: block;
+            margin-top: 25px;
+            margin-left: 50px;
+        }
+
+        .auto-rotate {
+            animation: rotate linear infinite 5s;
+            animation-play-state: paused;
+        }
+        .play {
+            animation-play-state: running;
+        }
+
+        @keyframes rotate {
+            from {}
+            50% {
+                transform: rotateZ(180deg) scale(1.1, 1.1);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+
+        .weather img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .list-item {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .list-enter-active,
+        .list-leave-active {
+            transition: all 1s;
+        }
+
+        .list-enter,
+        .list-leave-to
+        /* .list-leave-active for below version 2.1.8 */
+
+            {
+            opacity: 0;
+            transform: translateX(300px);
+
+        }
